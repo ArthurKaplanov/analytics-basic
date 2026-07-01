@@ -4,6 +4,10 @@ on:
   push:
     branches: [main]
 
+
+env:
+  PATH_FOR_LINT: src tests config
+
 jobs:
   lint:
     runs-on: ubuntu-latest
@@ -26,7 +30,7 @@ jobs:
 
       - name: Run isort
         run: |
-          uv run isort ${{ env.PATH_FOR_LINT }} --profile black --check-only
+          uv run isort --profile black --check-only
 
       # - name: Run black
       #   run: |
