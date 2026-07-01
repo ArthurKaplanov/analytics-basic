@@ -1,0 +1,15 @@
+#venv
+.venv
+
+# env
+.env
+
+# data
+data
+data.json
+
+#linters
+.ruff_cache
+
+#other
+.vscode
