@@ -30,7 +30,7 @@ jobs:
 
       - name: Run isort
         run: |
-          uv run isort --profile black --check-only
+          uv run isort . --profile black --check-only
 
       # - name: Run black
       #   run: |
